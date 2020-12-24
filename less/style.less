@@ -137,17 +137,120 @@
     display: flex;
     list-style: none;
     float: right;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: @col-80;
+        justify-content: center;
+        float: none;
+    }
+
+    @media (min-width:320px)and (max-width:767px) {
+        width: @col-80 + 20%;
+        justify-content: center;
+        float: none;
+    }
 }
 
 .paymen_footer li {
     width: 56px;
     height: 28px;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: auto;
+        height: auto;
+    }
+}
+
+svg.icon.icon--wide.icon-paypal {
+    @media (min-width: 768px) and (max-width: 991.98px) {}
+}
+
+svg.icon.icon-american_express {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 58%;
+    }
+
+}
+
+svg.icon.icon--wide.icon-apple_pay {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 70% !important;
+    }
+
+}
+svg.icon.icon-master{
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 70% !important;
+    }
+}
+
+svg.icon.icon--wide.icon-paypal{
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 100% !important;
+    }
+}
+svg.icon.icon--wide.icon-visa{
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        margin-left: 10px;
+    }
+}
+.ft_logo_mb {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ft_logo_mb svg {
+    width: 25%;
+
+    @media (min-width:320px)and (max-width:767px) {
+        width: 50%;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+.ft_logo_mb span {
+    color: @color-text-main;
+    font-size: 80%;
+    margin: 9px 8px;
+    padding-top: 5px;
+}
+
+.list_icons_ft_mb {
+    list-style: none;
+    display: flex;
+    @media (min-width:320px)and (max-width:767px) {
+        margin: auto;
+        width: @col-80 - 40%;
+        margin-bottom: 5%;
+        // justify-content: center;
+    }
+}
+
+.icon_ft_mb svg {
+    fill: @color-text-main  !important;
+    width: 22px;
+}
+
+.icon_ft_mb {
+    // padding-left: 35px;
+}
+
+.icon_ft_mb h3 {
+    color: @color-text-main;
+    font-family: @font-main;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 /* banner header----------- */
 .banner_pc {
-    padding: 0.7%;  
+    padding: 0.7%;
     background-color: @dark-background-color-main;
+
     @media (min-width:320px)and (max-width:767px) {
         /* Styles */
         padding-bottom: 1 !important;
@@ -206,6 +309,7 @@
         width: @width-icon + 60%;
         margin-left: 30%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         width: @width-icon + 60%;
     }
@@ -239,6 +343,7 @@
     color: @color-text-main;
     font-weight: 500;
     margin-left: 3%;
+
     @media (min-width:320px)and (max-width:767px) {
         font-size: 85%;
         line-height: 2;
@@ -246,17 +351,20 @@
 }
 
 /* banner image single ----------- */
-.img_banner_single{
+.img_banner_single {
     height: 80vh;
+
     @media (min-width:320px)and (max-width:767px) {
         height: auto;
     }
 }
+
 .img_banner_single img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
     opacity: 0.7;
+
     @media (min-width:320px)and (max-width:767px) {
         height: 40vh;
     }
@@ -266,16 +374,19 @@
     position: relative;
     opacity: 82%;
     bottom: 70%;
+
     @media (max-width: 991.98px) {
         bottom: 62%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         position: static;
     }
 }
-.main_content_bn{
+
+.main_content_bn {
     letter-spacing: 0;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 250%;
     color: @dark-background-color-main;
@@ -284,22 +395,26 @@
         font-size: 150%;
         width: 80%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         padding-top: 2%;
         margin: auto;
     }
 }
-.button_single_banner{
+
+.button_single_banner {
     @media (max-width: 991.98px) {
         width: 80%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         margin: auto;
         margin-top: 2%;
         margin-bottom: 3%;
     }
 }
-.btn-banner{
+
+.btn-banner {
     background-color: @background-color-main;
     width: 25%;
     border: none;
@@ -307,100 +422,192 @@
     color: @color-text-main;
     text-transform: uppercase;
     font-weight: 500;
+
     @media (max-width: 991.98px) {
         width: 60%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         width: 60%;
     }
 }
 
 /* banner image double ----------- */
-.image_double{
+.image_double {
     height: 59vh;
+
     @media (max-width: 991.98px) {
         height: 75vh;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         height: 43vh;
     }
+
     @media (max-width:320px) {
         height: 29vh;
     }
 }
-.image_banner_double{
+
+.image_banner_double {
     width: 50%;
     height: 60vh;
+
     @media (min-width:320px)and (max-width:767px) {
         // height: 43vh;
     }
 }
-.image_banner_double img{
+
+.image_banner_double img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
     opacity: 0.5;
     padding: 1.1%;
+
     @media (min-width: 768px) and (max-width: 991.98px) {
         height: 76vh;
         padding: 1.5%;
 
     }
+
     @media (min-width:320px)and (max-width:767px) {
         height: 43vh;
         padding: 1.9%;
     }
+
     @media (max-width:320px) {
         height: 30vh;
         padding: 1.9%;
     }
 }
-.content_banner_double{
+
+.content_banner_double {
     position: relative;
     bottom: 65%;
+
     @media (min-width: 768px) and (max-width: 991.98px) {
         bottom: 82%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         bottom: 55%;
     }
+
     @media (max-width:320px) {
         bottom: 40%;
     }
 }
-.content_banner_double h1{
+
+.content_banner_double h1 {
     opacity: 0.8;
     .main_content_bn();
+
     @media (min-width: 768px) and (max-width: 991.98px) {
         margin: auto;
     }
+
     @media (max-width:320px) {
         font-size: 130%;
     }
 }
-.content_banner_double p{
+
+.content_banner_double p {
     font-size: 160% !important;
     font-weight: normal !important;
     opacity: 0.7;
     margin-bottom: -1%;
     .main_content_bn();
+
     @media (min-width: 768px) and (max-width: 991.98px) {
         margin: auto;
-    font-size: 120% !important;
+        font-size: 120% !important;
 
     }
+
     @media (min-width:320px)and (max-width:767px) {
         margin-bottom: -4%;
         font-size: 120% !important;
     }
 }
-.btn-banner_db{
+
+.btn-banner_db {
     @media (min-width: 768px) and (max-width: 991.98px) {
         width: 30%;
     }
+
     @media (min-width:320px)and (max-width:767px) {
         margin-bottom: 100%;
         width: 150px;
+    }
+}
+/* shopify ----------- */
+
+.title-shopify{
+    margin: 5% 0 0%;
+    color: @background-color-main;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-family: @font-main;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 120%;
+    }
+    @media (min-width:320px)and (max-width:767px) {
+        font-size: 120%;
+        margin-top: 10%;
+    }
+}
+
+.shopify{
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 60%;        
+    }
+    @media (min-width:320px)and (max-width:767px) {
+        width: 90%;
+    }
+}
+.cate_shopify {
+    margin-top: 5%;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        text-align: initial;
+        display: flex;
+    }
+    @media (min-width:320px)and (max-width:767px) {
+        text-align: initial;
+        display: flex;
+    }
+
+}
+
+
+.cate_shopify img{
+    width: 50%;
+    border: 1px solid #e5e4e4;
+    border-radius: 50%;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 25%;
+    }
+    @media (min-width:320px)and (max-width:767px) {
+        width: 35%;
+    }
+
+}
+.cate_shopify h3{
+    margin-top: 3%;
+    color: #787979;
+    font-size: 160%;
+    font-weight: 400;
+    font-family: @font-main;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 100%;
+        align-self: center;
+        margin-left: 2%;
+    }
+    @media (min-width:320px)and (max-width:767px) {
+        font-size: 100%;
+        align-self: center;
+        margin-left: 2%;
     }
 }
 /* --------------------------------- responsive --------------------------------- */
@@ -408,6 +615,7 @@
 /* footer ----------- */
 .footer_mb {
     display: none;
+    background-color: @dark-background-color-main;
 
     @media (max-width: 991.98px) {
         display: block;
