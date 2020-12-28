@@ -205,10 +205,6 @@
 }
 .nav-bar-mobile{
 	overflow-x: scroll;
-	position: fixed;
-    left: 0;
-    top: 25%;
-    bottom: 0;
     min-height: 4rem;
 	width: 100%;
 	background-color: @background-color-main;
@@ -241,6 +237,25 @@
 #nav-input-checkbox:checked ~ .nav-bar-mobile{
 	transform: translateX(0%);
 }
+.nav-lv2{
+    background-color:@background-color-main;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.nav-link{
+    padding: 0;
+}
+.hide-menu{
+    transform: translateX(-100%);
+	transition: transform linear 0.3s;
+}
+.show-menu{
+    transition: transform linear 0.3s;
+    transform: translateX(0%);
+}
+
 //   mobile: width < 740px
 @media only screen and(max-width: 46.1875em){
     .shopify-section{
